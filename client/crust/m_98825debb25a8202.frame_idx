@@ -2,12 +2,12 @@
 version=0
 num_segments=0
 num_columns=3
-nrows=312
+nrows=160
 [column_names]
 0000=item_id
 0001=rating
 0002=user_id
 [column_files]
-0000=m_496404747fcf2b9a.sidx:0
-0001=m_496404747fcf2b9a.sidx:1
-0002=m_496404747fcf2b9a.sidx:2
+0000=m_98825debb25a8202.sidx:0
+0001=m_98825debb25a8202.sidx:1
+0002=m_98825debb25a8202.sidx:2

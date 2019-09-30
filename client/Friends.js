@@ -5,7 +5,7 @@ export default class Friends extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Add friends here!</Text>
+        <Text style={{color: 'white'}}>Add friends here!</Text>
         {
           this.props.screenProps.possibleFriends.map((friend, index) => (
             <Button
@@ -27,7 +27,7 @@ export default class Friends extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
   },

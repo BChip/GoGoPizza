@@ -17,9 +17,9 @@ def recommend():
     users = request.args.getlist('users')
     num = int(request.args.get('num'))
     sf = tc.load_sframe("toppings")
-    m = tc.recommender.create(sf, target='rating')
+    m = tc.recommender.create(sf, target='rating', ranking=True)
     recs=m.recommend(users=users, exclude_known=False, k=num)
-    print(recs)
+    recs.print_rows()
     return recs.to_dataframe().to_json()
 
 

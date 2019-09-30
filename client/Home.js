@@ -7,23 +7,24 @@ export default class Home extends React.Component {
   render() {
     return (
       <View style={s.container}>
-          <Image source={{uri: "https://pbs.twimg.com/profile_images/925726655523385344/fDCkJQ72_400x400.jpg"}} style={{width: 250, height: 250}}/>
+          <Image source={require('./assets/logo.png')} />
           <Text style={{fontSize: 40, fontWeight: 'bold', color: 'white'}}>Ez Way To Order Pizza</Text>
+          <View style={{flexDirection: 'row'}}>
           <IconButton
             name="shoppingcart"
             color="white"
             backgroundColor="#FF671B"
-            style={{padding: 10}}
+            style={{flex: 2, padding: 10}}
             onPress={() => this.props.navigation.navigate('Build')}
           />
           <IconButton
             name="addusergroup"
             color="white"
             backgroundColor="#FF671B"
-            style={{padding: 10}}
+            style={{flex: 2, padding: 10}}
             onPress={() => this.props.navigation.navigate('Friends')}
           />
-          
+          </View>
           <Text style={{color: "#fff"}}>You added {this.props.screenProps.currentFriends.length} to this order</Text>
         
       </View>

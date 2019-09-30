@@ -15,5 +15,6 @@ export default StyleSheet.create({
     shadowOpacity: 0.3,
     elevation: 2,
     padding: 15,
+    margin: 10,
   },
 })

@@ -36,7 +36,6 @@ class TrainCrust extends Component {
     } = this.state
     const {currentUser} = this.props.screenProps
     const toppings = pizzas.crust.map(i => i.name)
-    Alert.alert(currentUser)
     fetch('http://0.0.0.0:5000/traincrust', {
          method: 'POST', 
          headers: {
